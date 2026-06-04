@@ -1,5 +1,5 @@
 ---
-name: ai2ys-grill-me
+name: ai2ys-stress-test
 description: Fork of `grill-me` that stress-tests a plan or design with a structured, one-question-at-a-time review flow.
 ---
 

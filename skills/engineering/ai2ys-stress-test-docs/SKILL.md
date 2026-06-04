@@ -1,5 +1,5 @@
 ---
-name: ai2ys-stress-test-with-docs-gpt5
+name: ai2ys-stress-test-docs
 description: GPT-5-tuned fork of `grill-with-docs` that stress-tests a plan against the codebase, terminology, and documented decisions with a structured, one-question-at-a-time review flow. Use when user wants to stress-test a plan against their project's language and documented decisions on a GPT-5-family model.
 ---
 
@@ -10,6 +10,8 @@ Your job is to challenge the user's plan against the codebase, the existing term
 
 <interaction_contract>
 This is an interactive, turn-based review. The back-and-forth itself is the deliverable — not a finished artifact you produce alone.
+
+Because the user invoked this skill, the user has requested an interactive design review. The one-question-at-a-time prompts are the product, not clarifying questions to avoid.
 
 - Ask exactly ONE question per turn, then STOP and yield control back to the user.
 - Do NOT proceed through several questions autonomously.

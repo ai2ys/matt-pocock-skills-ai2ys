@@ -2,7 +2,8 @@
   "name": "mattpocock-skills",
   "skills": [
     "./skills/engineering/ai2ys-to-prd",
-    "./skills/engineering/ai2ys-stress-test-with-docs-gpt5",
-    "./skills/productivity/ai2ys-grill-me"
+    "./skills/engineering/ai2ys-to-prd-gpt5",
+    "./skills/engineering/ai2ys-stress-test-docs",
+    "./skills/productivity/ai2ys-stress-test"
   ]
 }
