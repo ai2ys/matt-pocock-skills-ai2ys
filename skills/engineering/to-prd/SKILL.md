@@ -52,11 +52,11 @@ Use this format:
 
 Rules:
 - Group stories by actor. Each heading must name a single actor/persona — not a feature area, workflow stage, or system component.
-- Number actor groups globally: 1, 2, 3, etc.
+- Number actor groups globally: 1, 2, 3, etc. Preserve existing actor group numbers across revisions: a newly added actor takes the next unused number; never renumber existing groups, as that would change their story IDs.
 - Number stories within each actor group using stable IDs: US-1.1, US-1.2, US-2.1, US-2.2, etc. IDs must be unique within the PRD and must not change across revisions unless a story is materially split, merged, or removed.
 - Start each story with "to <verb>" and include both the <capability or action> and the <benefit>.
 - Do not repeat the full actor phrase in every story.
-- Keep the list extensive, but merge duplicate or near-duplicate stories.
+- Keep the list extensive (cover all aspects of the feature), but merge duplicate or near-duplicate stories.
 - Use story IDs when referring to stories in issues, implementation notes, testing decisions,
 or follow-up planning.
 
