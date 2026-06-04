@@ -34,7 +34,12 @@ Skills that differ from upstream. Only these are registered in `.claude-plugin/p
 
 ### Engineering
 
-- **[to-prd-ai2ys](./skills/engineering/to-prd-ai2ys/SKILL.md)** — Turn the current conversation context into a PRD and publish it to the project issue tracker.
+- **[ai2ys-to-prd](./skills/engineering/ai2ys-to-prd/SKILL.md)** — Fork of `to-prd` that turns the current conversation context into a PRD and publishes it to the project issue tracker.
+- **[ai2ys-stress-test-with-docs-gpt5](./skills/engineering/ai2ys-stress-test-with-docs-gpt5/SKILL.md)** — GPT-5-tuned fork of `grill-with-docs` that stress-tests a plan against the codebase, terminology, and documented decisions, applying the official GPT-5 prompting guide (inverted eagerness, bounded context-gathering, `_spec` XML sections).
+
+### Productivity
+
+- **[ai2ys-grill-me](./skills/productivity/ai2ys-grill-me/SKILL.md)** — Fork of `grill-me` with a structured, one-question-at-a-time review flow.
 
 ## Attribution & License
 

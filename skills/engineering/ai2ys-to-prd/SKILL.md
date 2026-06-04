@@ -1,6 +1,6 @@
 ---
-name: to-prd-ai2ys
-description: Turn the current conversation context into a PRD and publish it to the project issue tracker. Use when user wants to create a PRD from the current context.
+name: ai2ys-to-prd
+description: Fork of `to-prd` that turns the current conversation context into a PRD and publishes it to the project issue tracker.
 ---
 
 This skill takes the current conversation context and codebase understanding and produces a PRD. Do NOT interview the user — just synthesize what you already know.
