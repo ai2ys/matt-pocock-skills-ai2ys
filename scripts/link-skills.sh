@@ -1,13 +1,21 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Links all skills in the repository to ~/.claude/skills, so that
-# they can be used by the local Claude CLI.
+# Links all skills in the repository to ~/.<AGENT>/skills, so that
+# they can be used by a local agent CLI.
+#
+# Usage: link-skills.sh [AGENT]
+#
+# AGENT defaults to "claude".
+# Examples:
+#   link-skills.sh           # ~/.claude/skills
+#   link-skills.sh codex     # ~/.codex/skills
 
 REPO="$(cd "$(dirname "$0")/.." && pwd)"
-DEST="$HOME/.claude/skills"
+AGENT="${1:-claude}"
+DEST="$HOME/.$AGENT/skills"
 
-# If ~/.claude/skills is a symlink that resolves into this repo, we'd end up
+# If ~/.$AGENT/skills is a symlink that resolves into this repo, we'd end up
 # writing the per-skill symlinks back into the repo's own skills/ tree. Detect
 # and bail out instead of polluting the working copy.
 if [ -L "$DEST" ]; then

@@ -1,14 +1,6 @@
 # Matt Pocock Skills - Adapted
 
-A personal adapted fork of Matt Pocock's [`skills`](https://github.com/mattpocock/skills) repository.
-
-This repository keeps the original engineering workflow ideas, but adapts the structure, metadata, and selected skill wording for my own local agent setup. It is used for compatibility changes, setup adjustments, and small refinements.
-
-This is not my own original skill collection. My custom skills live in a separate repository.
-
-The original upstream README is preserved in [`README.upstream.md`](./README.upstream.md).
-
-> Original portions remain copyright Matt Pocock and are licensed under the MIT License. Modifications in this fork are copyright `<your name or GitHub handle>` and are also licensed under the MIT License.
+A personal adapted fork of Matt Pocock's [`skills`](https://github.com/mattpocock/skills) repository, adjusted for my own local agent setup. The original upstream README is preserved in [`README.upstream.md`](./README.upstream.md).
 
 ## Branches
 
@@ -27,22 +19,25 @@ Typical changes may include:
 * repository structure changes
 * documentation updates for my workflow
 
-Custom skills that are not derived from the upstream repository should live in a separate repository.
+## Installation
 
-## Upstream
+Install the upstream skills first, then overlay the modifications from this fork:
 
-Original repository:
+```bash
+npx skills@latest add mattpocock/skills
+npx skills@latest add ai2ys/matt-pocock-skills-ai2ys
+```
 
-https://github.com/mattpocock/skills
+## Modified Skills
 
-To compare this fork with the original README, see [`README.upstream.md`](./README.upstream.md).
+Skills that differ from upstream. Only these are registered in `.claude-plugin/plugin.json`.
 
-## Attribution
+### Engineering
 
-This repository is an adapted fork of Matt Pocock's [`skills`](https://github.com/mattpocock/skills) repository.
+- **[to-prd-ai2ys](./skills/engineering/to-prd-ai2ys/SKILL.md)** — Turn the current conversation context into a PRD and publish it to the project issue tracker.
 
-Original portions remain copyright `Matt Pocock` and are licensed under the MIT License. Modifications in this fork are copyright `@ai2ys` and are also licensed under the MIT License.
+## Attribution & License
 
-## License
+Original repository: [github.com/mattpocock/skills](https://github.com/mattpocock/skills)
 
-MIT. See [`LICENSE`](./LICENSE).
+Original portions remain copyright `Matt Pocock` and are licensed under the MIT License. Modifications in this fork are copyright `@ai2ys` and are also licensed under the MIT License. See [`LICENSE`](./LICENSE).
