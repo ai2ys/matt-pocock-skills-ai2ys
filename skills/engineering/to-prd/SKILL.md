@@ -35,33 +35,30 @@ Use this format:
 
 ### 1. As a <actor>, I want
 
-- US-1.1: to <capability or action> - so that <benefit>.
-- US-1.2: to <capability or action> - so that <benefit>.
+- US-1.1: to <capability or action>, so that <benefit>.
+- US-1.2: to <capability or action>, so that <benefit>.
 
 ### 2. As an <actor>, I want
 
-- US-2.1: to <capability or action> - so that <benefit>.
-- US-2.2: to <capability or action> - so that <benefit>.
+- US-2.1: to <capability or action>, so that <benefit>.
+- US-2.2: to <capability or action>, so that <benefit>.
 
 <user-story-example>
 ### 1. As a mobile bank customer, I want
 
-- US-1.1: to see balances on my accounts - so that I can make better informed decisions about my spending.
-- US-1.2: to see recent transactions for each account - so that I can understand where my money is going.
+- US-1.1: to see balances on my accounts, so that I can make better informed decisions about my spending.
+- US-1.2: to see recent transactions for each account, so that I can understand where my money is going.
 </user-story-example>
 
 Rules:
-- Group stories by actor.
-- Use natural grammar in actor headings, e.g. "As a developer, I want" or "As an admin, I want".
+- Group stories by actor. Each heading must name a single actor/persona — not a feature area, workflow stage, or system component.
 - Number actor groups globally: 1, 2, 3, etc.
-- Number stories within each actor group using stable IDs: US-1.1, US-1.2, US-2.1, US-2.2, etc.
-- Start each story with "to <verb>".
-- Treat each story as equivalent to: "As the current actor, I want to <capability or action>, so that <benefit>."
+- Number stories within each actor group using stable IDs: US-1.1, US-1.2, US-2.1, US-2.2, etc. IDs must be unique within the PRD and must not change across revisions unless a story is materially split, merged, or removed.
+- Start each story with "to <verb>" and include both the <capability or action> and the <benefit>.
 - Do not repeat the full actor phrase in every story.
-- Each story must include both the capability/action and the benefit.
-- Keep stories short, concrete, and externally observable where possible.
 - Keep the list extensive, but merge duplicate or near-duplicate stories.
-- Use story IDs when referring to stories in issues, implementation notes, testing decisions, or follow-up planning.
+- Use story IDs when referring to stories in issues, implementation notes, testing decisions,
+or follow-up planning.
 
 ## Implementation Decisions
 
