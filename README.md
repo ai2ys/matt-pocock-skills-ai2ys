@@ -46,6 +46,7 @@ Skills I use daily for code work.
 
 ### Productivity
 
+- **[ai2ys-handoff-gpt](./skills/productivity/ai2ys-handoff-gpt/SKILL.md)** — GPT-tuned fork of `handoff` that writes handoff documents only to an absolute OS temp path, using timestamp, topic, and random suffix.
 - **[ai2ys-stress-test](./skills/productivity/ai2ys-stress-test/SKILL.md)** — Fork of `grill-me` with a structured, one-question-at-a-time review flow.
 
 ## Attribution & License

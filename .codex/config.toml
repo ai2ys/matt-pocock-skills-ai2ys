@@ -1,0 +1,23 @@
+model = "gpt-5.4"
+model_reasoning_effort = "medium"
+model_verbosity = "low"   
+model_reasoning_summary = "concise" 
+personality = "pragmatic"
+
+default_permissions = "project-edit"
+
+[permissions.project-edit]
+extends = ":workspace"
+
+[permissions.project-edit.filesystem.":workspace_roots"]
+"." = "write"
+"prompt-guidance" = "read"
+"**/*.env" = "deny"
+"secrets" = "deny"
+
+[tui]
+status_line = ["model-with-reasoning", "project-name", "git-branch", "context-used", "five-hour-limit", "used-tokens", "total-input-tokens", "total-output-tokens", "context-window-size"]
+status_line_use_colors = true
+
+[features]
+fast_mode = false
